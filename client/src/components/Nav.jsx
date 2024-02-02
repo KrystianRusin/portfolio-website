@@ -4,17 +4,17 @@ const Nav = () => {
   return (
     <div className="nav-container">
       <a href="">
-        <h2 className="nav-title">Krystian Rusin</h2>
+        <h3 className="nav-title">Krystian Rusin</h3>
       </a>
       <div className="nav-routes">
         <a href="">
-          <h3>About Me</h3>
+          <h4>About Me</h4>
         </a>
         <a href="">
-          <h3>Skills</h3>
+          <h4>Skills</h4>
         </a>
         <a href="">
-          <h3>Projects</h3>
+          <h4>Projects</h4>
         </a>
       </div>
       <button className="nav-contact"> Contact Me</button>
