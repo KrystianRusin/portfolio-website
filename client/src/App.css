@@ -1,5 +1,19 @@
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
-  background: linear-gradient(135deg, #282828 0%, #383838 100%);
+  background: linear-gradient(270deg, #282828, #505050);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
   margin: 0;
   padding: 0;
 }
@@ -51,7 +65,6 @@ body {
 
 .about {
   padding: 20px;
-  background-color: #282828;
   color: #fffbff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
