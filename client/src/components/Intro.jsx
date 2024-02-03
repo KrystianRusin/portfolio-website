@@ -4,7 +4,7 @@ import "../styles/Intro.css";
 
 const Intro = () => {
   const roles = [
-    "A Full Stack Developer",
+    "A Full Stack Engineer",
     " An A.I Enthusiast",
     "A Life Long Learner",
   ];

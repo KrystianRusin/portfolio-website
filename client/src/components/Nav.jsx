@@ -7,7 +7,7 @@ const Nav = () => {
         <h3 className="nav-title">Krystian Rusin</h3>
       </a>
       <div className="nav-routes">
-        <a href="">
+        <a href="#about">
           <h4>About Me</h4>
         </a>
         <a href="">

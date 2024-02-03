@@ -23,8 +23,7 @@
   margin-top: 60px;
   margin-bottom: 60px;
   height: 20px;
-  align-self: flex-start;
-  min-width: 450px;
+  min-width: 425px;
 }
 
 .typewriter {
@@ -33,18 +32,18 @@
 
 a {
   outline: none;
-  color: #fffbff;
+  color: var(--main-text-color);
 }
 
 @keyframes glowing {
   0% {
-    box-shadow: 0 0 2px #fffbff, 0 0 4px #fffbff;
+    box-shadow: 0 0 2px var(--main-text-color), 0 0 4px var(--main-text-color);
   }
   50% {
-    box-shadow: 0 0 4px #fffbff, 0 0 8px #fffbff;
+    box-shadow: 0 0 4px var(--main-text-color), 0 0 8px var(--main-text-color);
   }
   100% {
-    box-shadow: 0 0 2px #fffbff, 0 0 4px #fffbff;
+    box-shadow: 0 0 2px var(--main-text-color), 0 0 4px var(--main-text-color);
   }
 }
 
@@ -58,9 +57,9 @@ a {
 }
 
 .download-btn {
-  background-color: #d97a00;
+  background-color: var(--highlight-color);
   border: none;
-  color: #fffbff;
+  color: var(--main-text-color);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -69,6 +68,7 @@ a {
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px;
+  align-self: center;
 }
 
 .download-btn:hover {
