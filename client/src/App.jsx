@@ -13,9 +13,10 @@ function App() {
           position: "absolute",
           width: "100%",
           height: "100%",
-          speedFactor: 0.05,
           zIndex: -1,
         }}
+        numParticles={200}
+        speed={0.01}
       />
       <Nav className="nav" />
       <div className="main-content">
