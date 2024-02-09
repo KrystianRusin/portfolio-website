@@ -37,13 +37,13 @@ a {
 
 @keyframes glowing {
   0% {
-    box-shadow: 0 0 2px var(--main-text-color), 0 0 4px var(--main-text-color);
+    box-shadow: 0 0 2px var(--highlight-color), 0 0 4px var(--highlight-color);
   }
   50% {
-    box-shadow: 0 0 4px var(--main-text-color), 0 0 8px var(--main-text-color);
+    box-shadow: 0 0 4px var(--highlight-color), 0 0 8px var(--highlight-color);
   }
   100% {
-    box-shadow: 0 0 2px var(--main-text-color), 0 0 4px var(--main-text-color);
+    box-shadow: 0 0 2px var(--highlight-color), 0 0 4px var(--highlight-color);
   }
 }
 
@@ -57,20 +57,24 @@ a {
 }
 
 .download-btn {
-  background-color: var(--highlight-color);
-  border: none;
-  color: var(--main-text-color);
+  align-self: center;
+  background-color: transparent;
+  border: 2px solid var(--highlight-color);
+  color: var(--highlight-color);
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.2rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px;
-  align-self: center;
 }
 
 .download-btn:hover {
-  background-color: #b36800;
+  background-color: var(--highlight-color);
+  color: #fffbff;
+  box-shadow: 0 0 10px var(--highlight-color), 0 0 15px var(--highlight-color),
+    0 0 20px var(--highlight-color), 0 0 25px var(--highlight-color),
+    0 0 35px var(--highlight-color);
 }

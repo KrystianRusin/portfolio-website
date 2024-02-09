@@ -3,9 +3,9 @@ html {
 }
 
 :root {
-  --main-bg-color: #282828;
+  --main-bg-color: #000000;
   --main-text-color: #fffbff;
-  --highlight-color: #d97a00;
+  --highlight-color: #7c2a9f;
 
   color-scheme: light dark;
   color: var(--main-text-color);

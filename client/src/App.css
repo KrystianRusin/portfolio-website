@@ -11,11 +11,23 @@
 }
 
 body {
-  background: linear-gradient(270deg, #282828, #505050);
+  background: black;
   background-size: 200% 200%;
   animation: gradientShift 15s ease infinite;
   margin: 0;
   padding: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  box-shadow: 1px 1px #fff, 2px 2px #fff, 3px 3px #fff; /* Add more box shadows for more stars */
+  z-index: -1;
 }
 
 .content-container {
@@ -49,7 +61,7 @@ body {
 .center-content {
   text-align: center;
   padding: 20px;
-  background-color: #282828;
+  background: transparent;
   color: #fffbff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding-top: 3rem;
