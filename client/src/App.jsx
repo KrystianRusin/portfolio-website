@@ -4,6 +4,7 @@ import Intro from "./components/Intro";
 import Socials from "./components/Socials";
 import About from "./components/About";
 import Starfield from "react-starfield";
+import SkillsCarousel from "./components/skillsSlider";
 
 function App() {
   return (
@@ -25,9 +26,10 @@ function App() {
             <Socials />
             <Intro />
           </div>
+          <SkillsCarousel />
         </div>
       </div>
-      <div id="about">
+      <div id="about" className="about">
         <About />
       </div>
     </div>

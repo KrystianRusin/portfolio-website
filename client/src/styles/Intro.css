@@ -54,7 +54,6 @@ a {
   border-radius: 5px;
   box-shadow: 0 0 10px 0 #000000;
   animation: glowing 2s infinite;
-  position: relative;
   z-index: 1;
 }
 
