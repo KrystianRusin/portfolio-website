@@ -14,33 +14,17 @@ import { useState, useEffect } from "react";
 //TODO: BACKEND
 //TODO: ADD SAD PROJECT
 //TODO: IF LINK IS NOT PRESENT FOR PROJECT, DONT HIGHLIGHT BUTTON ON HOVER
-//TODO: FIX BUG THAT IF CLICK ON MODAL IT CLOSES
 
 function App() {
   const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = () => {
-    event.stopPropagation();
     setShowModal(true);
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
   };
-
-  useEffect(() => {
-    const handleBackgroundClick = (event) => {
-      handleCloseModal();
-    };
-
-    if (showModal) {
-      document.addEventListener("click", handleBackgroundClick);
-    }
-
-    return () => {
-      document.removeEventListener("click", handleBackgroundClick);
-    };
-  }, [showModal]);
 
   return (
     <div id="main" className="content-container">

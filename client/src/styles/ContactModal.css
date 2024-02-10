@@ -21,7 +21,7 @@
 .input-text {
   background-color: transparent;
   border: 2px solid var(--highlight-color);
-  color: var(--highlight-color);
+  color: white;
   padding: 10px;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -29,7 +29,7 @@
 }
 
 .contact-form {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 20px;
   border-radius: 5px;
   border: 2px solid #7c2a9f;

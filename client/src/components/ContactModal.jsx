@@ -1,9 +1,13 @@
 import "../styles/ContactModal.css";
 
-const ContactModal = () => {
+const ContactModal = ({ onClose }) => {
+  const stopPropagation = (event) => {
+    event.stopPropagation();
+  };
+
   return (
-    <div className="modal">
-      <form className="contact-form">
+    <div className="modal" onClick={onClose}>
+      <form className="contact-form" onClick={stopPropagation}>
         <h2>Contact Me!</h2>
         <div className="input-container">
           <label>Name:</label>
