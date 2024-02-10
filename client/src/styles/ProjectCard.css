@@ -12,6 +12,8 @@
 
 .project-card h3 {
   font-size: 2rem;
+  align-self: center;
+  justify-self: center;
 }
 
 .project-card-main-content {
@@ -33,6 +35,9 @@
 .project-img {
   width: 40rem;
   height: auto;
+  box-shadow: 0 0 10px 0 #000000;
+  animation: glowing 2s infinite;
+  z-index: 1;
 }
 
 .desc-container {
@@ -69,4 +74,16 @@
   box-shadow: 0 0 10px var(--highlight-color), 0 0 15px var(--highlight-color),
     0 0 20px var(--highlight-color), 0 0 25px var(--highlight-color),
     0 0 35px var(--highlight-color);
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 2px var(--highlight-color), 0 0 4px var(--highlight-color);
+  }
+  50% {
+    box-shadow: 0 0 4px var(--highlight-color), 0 0 8px var(--highlight-color);
+  }
+  100% {
+    box-shadow: 0 0 2px var(--highlight-color), 0 0 4px var(--highlight-color);
+  }
 }
