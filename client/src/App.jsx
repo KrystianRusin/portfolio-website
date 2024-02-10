@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="content-container">
+    <div id="main" className="content-container">
       <Starfield
         style={{
           position: "absolute",
