@@ -19,14 +19,24 @@ const ProjectCard = ({
           <h3>{projectTitle}</h3>
           <p>{projectDesc}</p>
           <div className="project-links">
-            <a href={repoLink || "#"} target="_blank" rel="noreferrer">
+            <a
+              href={repoLink || "#"}
+              target="_blank"
+              rel="noreferrer"
+              title={repoLink ? "" : "Repo link not available"}
+            >
               <button
                 className={`project-button ${repoLink ? "" : "no-hover"}`}
               >
                 <GitHubIcon />
               </button>
             </a>
-            <a href={projectLink || "#"} target="_blank" rel="noreferrer">
+            <a
+              href={projectLink || "#"}
+              target="_blank"
+              rel="noreferrer"
+              title={projectLink ? "" : "Link not available"}
+            >
               <button
                 className={`project-button ${projectLink ? "" : "no-hover"}`}
               >

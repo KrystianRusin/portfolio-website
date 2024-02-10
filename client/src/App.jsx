@@ -13,6 +13,7 @@ import { useState, useEffect } from "react";
 
 //TODO: BACKEND
 //TODO: ADD SAD PROJECT
+//TODO: VIEW MY RESUME BUTTON
 
 function App() {
   const [showModal, setShowModal] = useState(false);

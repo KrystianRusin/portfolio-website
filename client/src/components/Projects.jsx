@@ -14,7 +14,7 @@ const Projects = () => {
         projectTitle={"ObjectNova Landing Page"}
         projectImg={objectNova}
         projectDesc={
-          "A Company landing page for the startup company ObjectNova Inc. The website is built using React, Express and Material-UI. The website is fully responsive and has a contact form that sends an email to the company's email address. Repository not available because website is currently in production"
+          "A Company landing page for the startup company ObjectNova Inc. Website was created using React, and Express."
         }
         projectLink={"https://objectnova.ca"}
         imgPosition={"left"}
@@ -33,7 +33,7 @@ const Projects = () => {
         projectTitle={"CV Creator"}
         projectImg={cvCreatorImg}
         projectDesc={
-          "A CV creator built using ReactJS that allows users to input, skills education and work experience and then creates a resume that can be dowloaded as a PDF. Build Using React"
+          "A CV creator built using ReactJS that allows users to input, skills education and work experience and then creates a resume that can be dowloaded as a PDF. Built Using React"
         }
         repoLink={"https://github.com/KrystianRusin/cv-creator"}
         projectLink={"https://krystianrusin.github.io/cv-creator/"}

@@ -30,7 +30,7 @@ const Intro = () => {
           </span>
           {" }"}
         </h3>
-        <button className="download-btn">Download my Resume!</button>
+        <button className="download-btn">View my Resume!</button>
       </div>
       <img src={meImage} alt="PLACEHOLDER" className="me-img" />
     </div>
