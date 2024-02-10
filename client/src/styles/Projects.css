@@ -1,0 +1,12 @@
+.projects-container {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+.projects-container h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
