@@ -1,6 +1,6 @@
 import "../styles/Nav.css";
 
-const Nav = () => {
+const Nav = ({ openModal }) => {
   return (
     <div className="nav-container">
       <a href="#main">
@@ -17,7 +17,9 @@ const Nav = () => {
           <h4>Projects</h4>
         </a>
       </div>
-      <button className="nav-contact"> Contact Me</button>
+      <button className="nav-contact" onClick={openModal}>
+        Contact Me
+      </button>
     </div>
   );
 };

@@ -7,8 +7,41 @@ import Starfield from "react-starfield";
 import SkillsCarousel from "./components/skillsSlider";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import ContactModal from "./components/ContactModal";
+
+import { useState, useEffect } from "react";
+
+//TODO: BACKEND
+//TODO: ADD SAD PROJECT
+//TODO: IF LINK IS NOT PRESENT FOR PROJECT, DONT HIGHLIGHT BUTTON ON HOVER
+//TODO: FIX BUG THAT IF CLICK ON MODAL IT CLOSES
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    event.stopPropagation();
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  useEffect(() => {
+    const handleBackgroundClick = (event) => {
+      handleCloseModal();
+    };
+
+    if (showModal) {
+      document.addEventListener("click", handleBackgroundClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleBackgroundClick);
+    };
+  }, [showModal]);
+
   return (
     <div id="main" className="content-container">
       <Starfield
@@ -21,8 +54,9 @@ function App() {
         numParticles={200}
         speed={0.01}
       />
-      <Nav className="nav" />
+      <Nav className="nav" openModal={handleOpenModal} />
       <div className="main-content">
+        {showModal && <ContactModal onClose={handleCloseModal} />}
         <div className="center-content">
           <div className="intro-content">
             <Socials />
