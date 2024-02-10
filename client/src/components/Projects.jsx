@@ -14,7 +14,7 @@ const Projects = () => {
         projectTitle={"ObjectNova Landing Page"}
         projectImg={objectNova}
         projectDesc={
-          "A Company landing page for the startup company ObjectNova Inc. The website is built using React, Express and Material-UI. The website is fully responsive and has a contact form that sends an email to the company's email address."
+          "A Company landing page for the startup company ObjectNova Inc. The website is built using React, Express and Material-UI. The website is fully responsive and has a contact form that sends an email to the company's email address. Repository not available because website is currently in production"
         }
         projectLink={"https://objectnova.ca"}
         imgPosition={"left"}

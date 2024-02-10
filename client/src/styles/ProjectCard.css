@@ -68,7 +68,7 @@
   border-radius: 5px;
 }
 
-.project-button:hover {
+.project-button:not(.no-hover):hover {
   background-color: var(--highlight-color);
   color: #fffbff;
   box-shadow: 0 0 10px var(--highlight-color), 0 0 15px var(--highlight-color),
