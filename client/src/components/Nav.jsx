@@ -13,7 +13,7 @@ const Nav = ({ openModal }) => {
         <a href="#skills">
           <h4>Skills</h4>
         </a>
-        <a href="">
+        <a href="#projects">
           <h4>Projects</h4>
         </a>
       </div>
