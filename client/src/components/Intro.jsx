@@ -12,8 +12,11 @@ const Intro = () => {
   return (
     <div className="intro-container">
       <div className="intro-text-container">
-        <h2>Hi, My name is</h2>
-        <h2>Krystian Rusin</h2>
+        <h2>
+          Hi, My name is
+          <br />
+          Krystian Rusin
+        </h2>
         <h3>
           I&apos;m {"{  "}
           <span>

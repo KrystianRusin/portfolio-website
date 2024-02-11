@@ -16,6 +16,11 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.nav-container h3 {
+  font-size: 1.75rem;
+  letter-spacing: -1.5px;
+}
+
 .nav-routes {
   display: flex;
   justify-content: center;

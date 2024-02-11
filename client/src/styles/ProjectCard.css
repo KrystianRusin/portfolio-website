@@ -49,6 +49,15 @@
   min-height: 20rem;
 }
 
+.desc-contianer h3 {
+  text-align: start;
+}
+
+.desc-container p {
+  opacity: 0.8;
+  text-align: start;
+}
+
 .project-links {
   align-self: center;
   justify-self: flex-end;
