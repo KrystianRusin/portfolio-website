@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   z-index: 100;
+  animation: fadeIn 0.5s;
 }
 
 .input-container {
@@ -29,7 +30,7 @@
 }
 
 .contact-form {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 20px;
   border-radius: 5px;
   border: 2px solid #7c2a9f;
@@ -64,4 +65,13 @@
   box-shadow: 0 0 10px var(--highlight-color), 0 0 15px var(--highlight-color),
     0 0 20px var(--highlight-color), 0 0 25px var(--highlight-color),
     0 0 35px var(--highlight-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
