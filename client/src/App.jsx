@@ -17,6 +17,34 @@ import { useState, useEffect } from "react";
 //TODO: VIEW MY RESUME BUTTON
 
 function App() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.getAttribute("id");
+          if (entry.isIntersecting) {
+            document
+              .querySelector(`.nav-routes a[href="#${id}"]`)
+              .classList.add("active");
+          } else {
+            document
+              .querySelector(`.nav-routes a[href="#${id}"]`)
+              .classList.remove("active");
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+
+    observer.observe(document.querySelector("#about"));
+    observer.observe(document.querySelector("#skills"));
+    observer.observe(document.querySelector("#projects"));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = () => {
@@ -62,7 +90,7 @@ function App() {
         speed={0.01}
       />
       <Nav className="nav" openModal={handleOpenModal} />
-      <div className="main-content">
+      <div className="main-content" id="main-content">
         {showModal && <ContactModal onClose={handleCloseModal} />}
         <div className="center-content">
           <div className="intro-content">
