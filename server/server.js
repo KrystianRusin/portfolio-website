@@ -7,6 +7,10 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
+app.get("/health", (req, res) => {
+  return res.send("Healthy");
+});
+
 app.post("/send", async (req, res) => {
   let { name, email, message } = req.body;
   console.log(process.env.EMAIL_NAME);
