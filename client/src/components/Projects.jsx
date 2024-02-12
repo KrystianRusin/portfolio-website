@@ -5,6 +5,7 @@ import "../styles/Projects.css";
 import objectNova from "../assets/objectNova.png";
 import storeImg from "../assets/store.png";
 import cvCreatorImg from "../assets/cvCreator.png";
+import sadImg from "../assets/SAD.png";
 
 const Projects = () => {
   return (
@@ -37,6 +38,16 @@ const Projects = () => {
         }
         repoLink={"https://github.com/KrystianRusin/cv-creator"}
         projectLink={"https://krystianrusin.github.io/cv-creator/"}
+        imgPosition={"left"}
+      />
+      <ProjectCard
+        projectTitle={"Suspicious Activity Detection"}
+        projectImg={sadImg}
+        projectDesc={
+          "A project that uses machine learning to detect suspicious activity in a given video. The project uses OpenCV to process the video and then uses a pre-trained model to detect suspicious activity."
+        }
+        repoLink={"https://github.com/kavanc/CAPSTONE2022-2023"}
+        imgPosition={"right"}
       />
     </div>
   );
