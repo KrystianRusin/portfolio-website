@@ -1,5 +1,5 @@
 import "../styles/ContactModal.css";
-import React, { useRef } from "react"; // Import useRef
+import React, { useRef } from "react";
 
 const ContactModal = ({ onClose }) => {
   const formRef = useRef();
@@ -15,7 +15,7 @@ const ContactModal = ({ onClose }) => {
   const handleSubmit = (event) => {
     onClose();
     event.preventDefault();
-    fetch("http://localhost:5000/send", {
+    fetch("https://api.krystianrusin.com/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

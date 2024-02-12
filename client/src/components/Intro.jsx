@@ -26,8 +26,8 @@ const Intro = () => {
               loop={true}
               cursor
               cursorStyle="_"
-              typeSpeed={70}
-              deleteSpeed={50}
+              typeSpeed={100}
+              deleteSpeed={75}
               delaySpeed={1000}
             />
           </span>
