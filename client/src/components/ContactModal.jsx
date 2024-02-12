@@ -58,7 +58,14 @@ const ContactModal = ({ onClose }) => {
 
         <div className="input-container">
           <label>Message:</label>
-          <textarea name="message" className="input-text" required />
+          <textarea
+            name="message"
+            className="input-text"
+            rows="15"
+            cols="50"
+            required
+            id="message-input"
+          />
         </div>
         <div className="input-container">
           <input type="submit" value="Submit" className="submit-btn" />

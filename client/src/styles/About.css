@@ -34,6 +34,7 @@
   align-items: flex-start;
   gap: 1rem;
   opacity: 0.8;
+  letter-spacing: -0.5px;
 }
 
 .about-content-container {
