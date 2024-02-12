@@ -14,8 +14,6 @@ import { useInView } from "react-intersection-observer";
 
 import { useState, useEffect } from "react";
 
-//TODO: VIEW MY RESUME BUTTON
-
 function App() {
   useEffect(() => {
     const observer = new IntersectionObserver(
