@@ -9,10 +9,11 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import ContactModal from "./components/ContactModal";
 
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import { useState, useEffect } from "react";
 
-//TODO: BACKEND
-//TODO: ADD SAD PROJECT
 //TODO: VIEW MY RESUME BUTTON
 
 function App() {
@@ -24,6 +25,28 @@ function App() {
 
   const handleCloseModal = () => {
     setShowModal(false);
+  };
+
+  const [refAbout, inViewAbout] = useInView({
+    triggerOnce: true,
+  });
+
+  const [refSkills, inViewSkills] = useInView({
+    triggerOnce: true,
+  });
+
+  const [refProjects, inViewProjects] = useInView({
+    triggerOnce: true,
+  });
+
+  const variants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+      },
+    },
   };
 
   return (
@@ -49,15 +72,36 @@ function App() {
           <SkillsCarousel />
         </div>
       </div>
-      <div id="about" className="about">
-        <About />
-      </div>
-      <div id="skills" className="skills-container">
-        <Skills />
-      </div>
-      <div id="projects" className="projects-container">
-        <Projects />
-      </div>
+      <motion.div
+        ref={refAbout}
+        variants={variants}
+        initial="hidden"
+        animate={inViewAbout ? "show" : "hidden"}
+      >
+        <div id="about" className="about">
+          <About />
+        </div>
+      </motion.div>
+      <motion.div
+        ref={refSkills}
+        variants={variants}
+        initial="hidden"
+        animate={inViewSkills ? "show" : "hidden"}
+      >
+        <div id="skills" className="skills-container">
+          <Skills />
+        </div>
+      </motion.div>
+      <motion.div
+        ref={refProjects}
+        variants={variants}
+        initial="hidden"
+        animate={inViewProjects ? "show" : "hidden"}
+      >
+        <div id="projects" className="projects-container">
+          <Projects />
+        </div>
+      </motion.div>
     </div>
   );
 }

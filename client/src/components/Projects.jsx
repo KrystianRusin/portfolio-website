@@ -44,7 +44,7 @@ const Projects = () => {
         projectTitle={"Suspicious Activity Detection"}
         projectImg={sadImg}
         projectDesc={
-          "A project that uses machine learning to detect suspicious activity in a given video. The project uses OpenCV to process the video and then uses a pre-trained model to detect suspicious activity."
+          "A project that uses machine learning to detect suspicious activity in a given video. The project uses OpenCV to process the video and then uses the YOLOv8 model to detect suspicious activity."
         }
         repoLink={"https://github.com/kavanc/CAPSTONE2022-2023"}
         imgPosition={"right"}
