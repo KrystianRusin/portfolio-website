@@ -1,12 +1,18 @@
+import { useState } from "react";
 import "../styles/Nav.css";
 
 const Nav = ({ openModal }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="nav-container">
       <a href="#main">
         <h3 className="nav-title">Krystian Rusin</h3>
       </a>
-      <div className="nav-routes">
+      <button className="nav-hamburger" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </button>
+      <div className={`nav-routes ${isOpen ? "open" : ""}`}>
         <a href="#about">
           <h4>About Me</h4>
         </a>
@@ -16,8 +22,11 @@ const Nav = ({ openModal }) => {
         <a href="#projects">
           <h4>Projects</h4>
         </a>
+        <button className="nav-contact mobile" onClick={openModal}>
+          Contact Me
+        </button>
       </div>
-      <button className="nav-contact" onClick={openModal}>
+      <button className="nav-contact desktop" onClick={openModal}>
         Contact Me
       </button>
     </div>

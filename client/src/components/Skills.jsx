@@ -44,12 +44,18 @@ const Skills = () => {
     <div className="skills-container">
       <h2>Skills</h2>
       <div className="skills-card-container">
-        <SkillCard skillsArray={FullStackSkills} title="Full Stack" />
+        <SkillCard
+          skillsArray={FullStackSkills}
+          title="Full Stack Development"
+        />
         <SkillCard
           skillsArray={SoftwareEngineeringSkillls}
           title="Software Development"
         />
-        <SkillCard skillsArray={MiscSkills} title="Other" />
+        <SkillCard
+          skillsArray={MiscSkills}
+          title="Other Tools and Technology"
+        />
       </div>
     </div>
   );

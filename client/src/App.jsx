@@ -92,8 +92,8 @@ function App() {
         {showModal && <ContactModal onClose={handleCloseModal} />}
         <div className="center-content">
           <div className="intro-content">
-            <Socials />
             <Intro />
+            <Socials />
           </div>
           <SkillsCarousel />
         </div>

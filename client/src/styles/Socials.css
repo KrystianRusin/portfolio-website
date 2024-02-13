@@ -8,3 +8,14 @@
   left: 6%;
   top: 28rem;
 }
+
+@media (max-width: 768px) {
+  .intro-socials {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    margin-top: 2rem;
+    left: auto;
+    top: auto;
+  }
+}
