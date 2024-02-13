@@ -6,7 +6,7 @@ const cors = require("cors");
 
 app.use(cors());
 
-const allowedOrigins = ["http://krystianrusin.com"];
+const allowedOrigins = ["https://krystianrusin.com"];
 
 app.use(
   cors({
