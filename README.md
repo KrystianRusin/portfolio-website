@@ -22,7 +22,7 @@ https://krystianrusin.com
     npm run postinstall
     ```
   - After these have completed, in the root directory run:
-  ```
-  npm run
-  ```
+    ```
+    npm run start
+    ```
  - Visit localhost:5173 on your web browser to view the local instance
