@@ -5,6 +5,22 @@ const app = express();
 const cors = require("cors");
 
 app.use(cors());
+
+const allowedOrigins = ["http://krystianrusin.com"];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (allowedOrigins.indexOf(origin) === -1) {
+        var msg =
+          "The CORS policy for this site does not allow access from the specified Origin.";
+        return callback(new Error(msg), false);
+      }
+      return callback(null, true);
+    },
+  })
+);
+
 app.use(express.json());
 
 app.get("/health", (req, res) => {
