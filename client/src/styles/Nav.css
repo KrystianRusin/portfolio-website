@@ -111,6 +111,10 @@
   cursor: pointer;
 }
 
+.nav-routes.open {
+  transform: scaleY(1);
+}
+
 @media (max-width: 768px) {
   .nav-container {
     display: flex;
