@@ -9,7 +9,9 @@ const ContactModal = ({ onClose }) => {
   };
 
   const resetForm = () => {
-    formRef.current.reset();
+    if (formRef.current !== null) {
+      formRef.current.reset();
+    }
   };
 
   const handleSubmit = (event) => {
