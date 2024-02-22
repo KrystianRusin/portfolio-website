@@ -55,6 +55,7 @@
   border-radius: 5px;
   box-shadow: 0 0 10px 0 #000000;
   animation: glowing 2s infinite;
+  opacity: 0.8;
 }
 
 @media (min-width: 600px) {
