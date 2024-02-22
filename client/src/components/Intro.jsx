@@ -15,7 +15,7 @@ const Intro = () => {
         <h2>
           Hi, My name is
           <br />
-          Krystian Rusin
+          <span className="name-title">Krystian Rusin</span>
         </h2>
         <h3>
           I&apos;m {"{  "}

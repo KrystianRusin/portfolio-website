@@ -12,7 +12,7 @@ const ProjectCard = ({
   imgPosition,
 }) => {
   return (
-    <div className={`project-card ${imgPosition}`}>
+    <div className={`project-card`}>
       <div className="project-card-main-content">
         <img src={projectImg} alt="project" className="project-img" />
         <div className="desc-container">

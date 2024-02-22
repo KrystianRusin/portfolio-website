@@ -114,7 +114,7 @@ function App() {
         initial="hidden"
         animate={inViewSkills ? "show" : "hidden"}
       >
-        <div id="skills" className="skills-container">
+        <div id="skills" className="skills">
           <Skills />
         </div>
       </motion.div>
@@ -124,7 +124,7 @@ function App() {
         initial="hidden"
         animate={inViewProjects ? "show" : "hidden"}
       >
-        <div id="projects" className="projects-container">
+        <div id="projects" className="projects ">
           <Projects />
         </div>
       </motion.div>
