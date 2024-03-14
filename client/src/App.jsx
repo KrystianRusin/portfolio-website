@@ -3,9 +3,10 @@ import Nav from "./components/Nav";
 import Intro from "./components/Intro";
 import Socials from "./components/Socials";
 import About from "./components/About";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import Stars from "./components/three/Stars";
 import SkillsCarousel from "./components/skillsSlider";
+
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import ContactModal from "./components/ContactModal";
@@ -14,6 +15,17 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import { useState, useEffect } from "react";
+
+const CameraController = () => {
+  const { camera } = useThree();
+  useFrame(({ clock }) => {
+    const radius = 500;
+    camera.position.x = radius * Math.sin(clock.getElapsedTime() * 0.05);
+    camera.position.z = radius * Math.cos(clock.getElapsedTime() * 0.05);
+    camera.lookAt(0, 0, 0);
+  });
+  return null;
+};
 
 function App() {
   useEffect(() => {
@@ -79,8 +91,9 @@ function App() {
   return (
     <div id="main" className="content-container">
       <div className="canvas">
-        <Canvas camera={{ position: [0, 0, 50], fov: 75 }}>
+        <Canvas camera={{ position: [0, 0, 200], fov: 75 }}>
           <Stars />
+          <CameraController />
         </Canvas>
       </div>
 
