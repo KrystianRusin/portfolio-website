@@ -139,3 +139,9 @@ a {
     max-width: 300px;
   }
 }
+
+@media (max-width: 1075px) and (min-width: 769px) {
+  .intro-text-container h2 {
+    margin-bottom: 12rem;
+  }
+}

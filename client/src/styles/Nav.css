@@ -125,9 +125,7 @@
 
 @media (max-width: 768px) {
   .nav-container {
-    display: flex;
-    justify-content: center;
-    gap: 8.5rem;
+    display: none;
   }
 
   .nav-contact.mobile {
