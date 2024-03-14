@@ -33,6 +33,11 @@ const Intro = () => {
           </span>
           {" }"}
         </h3>
+        <p className="intro-info">
+          Based out of Toronto, Ontario with experience in web development, and
+          software development. I am working for ObjectNova Inc. as a Full Stack
+          Engineer.
+        </p>
         <a className="download-a" href="/resume.pdf" target="_blank">
           <button className="download-btn">View my Resume!</button>
         </a>

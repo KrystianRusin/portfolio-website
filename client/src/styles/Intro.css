@@ -18,6 +18,14 @@
   -webkit-text-fill-color: transparent;
 }
 
+.intro-info {
+  font-size: 1.5rem;
+  color: #a0aec0;
+  margin-bottom: 1.25rem;
+  max-width: 600px;
+  text-align: start;
+}
+
 .intro-text-container h2 {
   font-size: 4.5rem;
   font-weight: 700;
@@ -33,7 +41,6 @@
   font-weight: 500;
   margin-top: 8rem;
   margin-left: 0.25rem;
-  margin-bottom: 5rem;
   height: 20px;
   min-width: 425px;
   text-align: start;
@@ -72,10 +79,14 @@ a {
 }
 
 .download-btn {
-  align-self: center;
-  background-color: transparent;
-  border: 2px solid var(--highlight-color);
-  color: var(--highlight-color);
+  background: rgba(
+    26,
+    32,
+    44,
+    0.3
+  ); /* toned-down version of the hover background color */
+  border: 1px solid rgba(124, 42, 159, 0.5);
+  color: var(--main-text-color);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -87,7 +98,8 @@ a {
 }
 
 .download-a {
-  align-self: center;
+  margin-top: 2rem;
+  align-self: flex-start;
   background-color: transparent;
   color: var(--highlight-color);
   text-align: center;

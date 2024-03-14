@@ -8,15 +8,13 @@ const Nav = ({ openModal }) => {
   return (
     <div className="nav-container">
       <div className="nav-name-header">
-        <a href="#main">
-          <h3 className="nav-title">Krystian Rusin</h3>
-        </a>
+        <h3 className="nav-title">Krystian Rusin</h3>
       </div>
       <button className="nav-hamburger" onClick={() => setIsOpen(!isOpen)}>
         ☰
       </button>
       <div className={`nav-routes ${isOpen ? "open" : ""}`}>
-        <a href="#about">
+        <a href="#main">
           <h4>About Me</h4>
         </a>
         <a href="#skills">
