@@ -14,7 +14,6 @@ const Skills = () => {
   return (
     <section id="skills">
       <SkillText />
-
       <div className="flex-row">
         {Skill_data.map((image, index) => (
           <SkillDataProvider
