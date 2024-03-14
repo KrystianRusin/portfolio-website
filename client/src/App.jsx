@@ -90,13 +90,6 @@ function App() {
 
   return (
     <div id="main" className="content-container">
-      <div className="canvas">
-        <Canvas camera={{ position: [0, 0, 200], fov: 75 }}>
-          <Stars />
-          <CameraController />
-        </Canvas>
-      </div>
-
       <Nav className="nav" openModal={handleOpenModal} />
       <div className="main-content" id="main-content">
         {showModal && <ContactModal onClose={handleCloseModal} />}
@@ -137,6 +130,12 @@ function App() {
           <Projects />
         </div>
       </motion.div>
+      <div className="canvas">
+        <Canvas camera={{ position: [0, 0, 200], fov: 75 }}>
+          <Stars />
+          <CameraController />
+        </Canvas>
+      </div>
     </div>
   );
 }
