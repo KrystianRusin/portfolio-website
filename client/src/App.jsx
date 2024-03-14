@@ -3,7 +3,8 @@ import Nav from "./components/Nav";
 import Intro from "./components/Intro";
 import Socials from "./components/Socials";
 import About from "./components/About";
-import Starfield from "react-starfield";
+import { Canvas } from "@react-three/fiber";
+import Stars from "./components/three/Stars";
 import SkillsCarousel from "./components/skillsSlider";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -77,16 +78,12 @@ function App() {
 
   return (
     <div id="main" className="content-container">
-      <Starfield
-        style={{
-          position: "absolute",
-          width: "100%",
-          height: "100%",
-          zIndex: -1,
-        }}
-        numParticles={200}
-        speed={0.01}
-      />
+      <div className="canvas">
+        <Canvas camera={{ position: [0, 0, 50], fov: 75 }}>
+          <Stars />
+        </Canvas>
+      </div>
+
       <Nav className="nav" openModal={handleOpenModal} />
       <div className="main-content" id="main-content">
         {showModal && <ContactModal onClose={handleCloseModal} />}
