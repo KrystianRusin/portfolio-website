@@ -1,63 +1,80 @@
-import ReactIcon from "../assets/react.svg";
-import NodeIcon from "../assets/node.svg";
-import MongoIcon from "../assets/mongo.svg";
-import TailwindIcon from "../assets/tailwindcss.svg";
-import MySqlIcon from "../assets/mysql.svg";
-
-import PythonIcon from "../assets/python.svg";
-import JavaIcon from "../assets/java.svg";
-import CppIcon from "../assets/cpp.svg";
-import GitIcon from "../assets/git.svg";
-import TensorFlowIcon from "../assets/tensorflow.svg";
-
-import JiraIcon from "../assets/jira.svg";
-import ConfluenceIcon from "../assets/confluence.svg";
-import LinuxIcon from "../assets/linux.svg";
-
-import SkillCard from "./SkillCard";
-import "../styles/Skills.css";
-
-const FullStackSkills = [
-  { icon: ReactIcon, level: 5 },
-  { icon: NodeIcon, level: 4 },
-  { icon: MongoIcon, level: 4 },
-  { icon: MySqlIcon, level: 4 },
-  { icon: TailwindIcon, level: 3 },
-];
-
-const SoftwareEngineeringSkillls = [
-  { icon: PythonIcon, level: 5 },
-  { icon: JavaIcon, level: 4 },
-  { icon: CppIcon, level: 3 },
-  { icon: GitIcon, level: 4 },
-  { icon: TensorFlowIcon, level: 4 },
-];
-
-const MiscSkills = [
-  { icon: JiraIcon, level: 4 },
-  { icon: ConfluenceIcon, level: 4 },
-  { icon: LinuxIcon, level: 4 },
-];
+import {
+  Backend_skill,
+  Frontend_skill,
+  Full_stack,
+  Other_skill,
+  Skill_data,
+} from "../constants";
+import React from "react";
+import SkillDataProvider from "./SkillDataProvider";
+import SkillText from "./SkillText";
+import "../styles/Skills.css"; // Import the new CSS file
 
 const Skills = () => {
   return (
-    <div className="skills-container">
-      <h2>Skills</h2>
-      <div className="skills-card-container">
-        <SkillCard
-          skillsArray={FullStackSkills}
-          title="Full Stack Development"
-        />
-        <SkillCard
-          skillsArray={SoftwareEngineeringSkillls}
-          title="Software Development"
-        />
-        <SkillCard
-          skillsArray={MiscSkills}
-          title="Other Tools and Technology"
-        />
+    <section id="skills">
+      <SkillText />
+
+      <div className="flex-row">
+        {Skill_data.map((image, index) => (
+          <SkillDataProvider
+            key={index}
+            src={image.Image}
+            width={image.width}
+            height={image.height}
+            index={index}
+          />
+        ))}
       </div>
-    </div>
+
+      <div className="flex-row">
+        {Frontend_skill.map((image, index) => (
+          <SkillDataProvider
+            key={index}
+            src={image.Image}
+            width={image.width}
+            height={image.height}
+            index={index}
+          />
+        ))}
+      </div>
+
+      <div className="flex-row">
+        {Backend_skill.map((image, index) => (
+          <SkillDataProvider
+            key={index}
+            src={image.Image}
+            width={image.width}
+            height={image.height}
+            index={index}
+          />
+        ))}
+      </div>
+
+      <div className="flex-row">
+        {Full_stack.map((image, index) => (
+          <SkillDataProvider
+            key={index}
+            src={image.Image}
+            width={image.width}
+            height={image.height}
+            index={index}
+          />
+        ))}
+      </div>
+      <div className="absolute">
+        <div className="bg-cover">
+          <video
+            preload="false"
+            playsInline
+            loop
+            muted
+            autoPlay
+            src="/cards-video.webm"
+          />
+        </div>
+      </div>
+    </section>
   );
 };
 
