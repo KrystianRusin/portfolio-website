@@ -1,7 +1,9 @@
 .intro-container {
   display: flex;
-  justify-content: center;
-  gap: 64px;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 100%;
 }
 
 .intro-text-container {
@@ -17,7 +19,7 @@
 }
 
 .intro-text-container h2 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.2;
   padding: 0;
@@ -27,7 +29,7 @@
 }
 .intro-text-container h3 {
   font-size: 2rem;
-  line-height: 2.4rem;
+  line-height: 4.4rem;
   font-weight: 500;
   margin-top: 8rem;
   margin-left: 0.25rem;

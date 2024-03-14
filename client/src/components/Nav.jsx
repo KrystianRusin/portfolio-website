@@ -25,12 +25,12 @@ const Nav = ({ openModal }) => {
         <a href="#projects">
           <h4>Projects</h4>
         </a>
-        <button className="nav-contact desktop" onClick={openModal}>
+        {/*} <button className="nav-contact desktop" onClick={openModal}>
           Contact Me
         </button>
         <button className="nav-contact mobile" onClick={openModal}>
           Contact Me
-        </button>
+        </button>*/}
       </div>
       <Socials />
     </div>

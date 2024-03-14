@@ -1,11 +1,10 @@
 import "./App.css";
 import Nav from "./components/Nav";
 import Intro from "./components/Intro";
-import Socials from "./components/Socials";
+import Blackhole from "./components/Blackhole";
 import About from "./components/About";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import Stars from "./components/three/Stars";
-import SkillsCarousel from "./components/skillsSlider";
 
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -90,6 +89,7 @@ function App() {
 
   return (
     <div id="main" className="content-container">
+      <Blackhole />
       <Nav className="nav" openModal={handleOpenModal} />
       <div className="main-content" id="main-content">
         {showModal && <ContactModal onClose={handleCloseModal} />}
@@ -97,7 +97,6 @@ function App() {
           <div className="intro-content">
             <Intro />
           </div>
-          <SkillsCarousel />
         </div>
       </div>
       <motion.div

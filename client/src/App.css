@@ -31,7 +31,6 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  max-width: 1200px;
   margin-top: 10rem;
   margin-bottom: 15rem;
 }
@@ -54,4 +53,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
