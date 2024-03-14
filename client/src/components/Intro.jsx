@@ -1,5 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
-import meImage from "../assets/me.jpg";
+import meImage from "../assets/mainIconsDark.svg";
 import "../styles/Intro.css";
 
 const Intro = () => {

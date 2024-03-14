@@ -9,7 +9,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  border-bottom: 1px solid var(--highlight-color);
+  border-bottom: 1px solid rgba(124, 42, 159, 0.5);
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
@@ -26,6 +26,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-left: 2rem;
 }
 
 .nav-routes {
@@ -34,6 +35,7 @@
   align-items: center;
   gap: 40px;
   width: 50%;
+  margin-right: 7rem;
 }
 
 .nav-container a {
