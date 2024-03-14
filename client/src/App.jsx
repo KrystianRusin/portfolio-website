@@ -103,7 +103,6 @@ function App() {
         <div className="center-content">
           <div className="intro-content">
             <Intro />
-            <Socials />
           </div>
           <SkillsCarousel />
         </div>

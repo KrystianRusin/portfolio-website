@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Socials from "./Socials";
 import "../styles/Nav.css";
 
 const Nav = ({ openModal }) => {
@@ -6,9 +7,11 @@ const Nav = ({ openModal }) => {
 
   return (
     <div className="nav-container">
-      <a href="#main">
-        <h3 className="nav-title">Krystian Rusin</h3>
-      </a>
+      <div className="nav-name-header">
+        <a href="#main">
+          <h3 className="nav-title">Krystian Rusin</h3>
+        </a>
+      </div>
       <button className="nav-hamburger" onClick={() => setIsOpen(!isOpen)}>
         ☰
       </button>
@@ -22,13 +25,14 @@ const Nav = ({ openModal }) => {
         <a href="#projects">
           <h4>Projects</h4>
         </a>
+        <button className="nav-contact desktop" onClick={openModal}>
+          Contact Me
+        </button>
         <button className="nav-contact mobile" onClick={openModal}>
           Contact Me
         </button>
       </div>
-      <button className="nav-contact desktop" onClick={openModal}>
-        Contact Me
-      </button>
+      <Socials />
     </div>
   );
 };
