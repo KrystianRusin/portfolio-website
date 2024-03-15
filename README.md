@@ -1,13 +1,12 @@
 # KrystianRusin.com
 
-My portfolio website to showcase my projects, skill set and journey as a Software developer.
+My portfolio website to showcase my projects created throughout my Software Developer journey
 
-Created using ReactJS and ExpressJS
+Created using ReactJS (with threeJs and framer motion) and ExpressJS
 
 https://krystianrusin.com
 
-![image](https://github.com/KrystianRusin/portfolio-website/assets/36743674/c8eafc75-e971-4b37-b76a-0302438210f6)
-
+![image](https://github.com/KrystianRusin/portfolio-website/assets/36743674/e0e31ed7-6376-4d06-8b7f-75d3ebed2f50)
 
 ## To Run Locally:
 
