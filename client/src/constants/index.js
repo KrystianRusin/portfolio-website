@@ -180,8 +180,8 @@ export const Backend_skill = [
     height: 70,
   },
   {
-    skill_name: "Jira",
-    Image: "/jira.svg",
+    skill_name: "Flask",
+    Image: "/flask.svg",
     width: 70,
     height: 70,
   },
@@ -223,8 +223,8 @@ export const Full_stack = [
 
 export const Other_skill = [
   {
-    skill_name: "Go",
-    Image: "/go.png",
+    skill_name: "Jira",
+    Image: "/jira.svg",
     width: 60,
     height: 60,
   },
