@@ -53,7 +53,7 @@ function App() {
         </div>
       </div>
 
-      <motion.div>
+      <motion.div className="skills-motion">
         <div id="skills" className="skills">
           <Skills />
         </div>

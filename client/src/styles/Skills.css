@@ -28,7 +28,7 @@
   position: absolute;
 }
 
-#skills .bg-cover {
+.bg-cover {
   width: 100%;
   height: 100%;
   z-index: -10;
