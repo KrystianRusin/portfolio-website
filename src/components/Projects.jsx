@@ -50,24 +50,6 @@ const Projects = () => {
           repoLink={"https://github.com/KrystianRusin/instagram-clone"}
         />
         <ProjectCard
-          projectTitle={"Demo Store"}
-          projectImg={storeImg}
-          projectDesc={
-            "A Demo clothing store built using ReactJS and TailwindCSS and gathers fake store items from FakeStoreAPI to populate products."
-          }
-          repoLink={"https://github.com/KrystianRusin/shopping-cart"}
-          projectLink={"https://krystianrusin.github.io/shopping-cart/"}
-        />
-        <ProjectCard
-          projectTitle={"CV Creator"}
-          projectImg={cvCreatorImg}
-          projectDesc={
-            "A CV creator built using ReactJS that allows users to input, skills education and work experience and then creates a resume that can be dowloaded as a PDF. Built Using React"
-          }
-          repoLink={"https://github.com/KrystianRusin/cv-creator"}
-          projectLink={"https://krystianrusin.github.io/cv-creator/"}
-        />
-        <ProjectCard
           projectTitle={"Suspicious Activity Detection"}
           projectImg={sadImg}
           projectDesc={

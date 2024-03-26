@@ -64,7 +64,10 @@ function App() {
         </div>
       </motion.div>
       <div className="canvas">
-        <Canvas camera={{ position: [0, 0, 200], fov: 75 }}>
+        <Canvas
+          style={{ width: "100%", height: "100%" }}
+          camera={{ position: [0, 0, 200], fov: 75 }}
+        >
           <Stars />
           <CameraController />
         </Canvas>
