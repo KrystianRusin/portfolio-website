@@ -1,5 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
-import meImage from "../assets/mainIconsDark.svg";
+import meImage from "../assets/mainIconsdark.svg";
 import "../styles/Intro.css";
 import { motion } from "framer-motion";
 
