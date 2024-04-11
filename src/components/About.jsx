@@ -1,5 +1,4 @@
 import "../styles/About.css";
-import AboutImage from "../assets/about-me.jpg";
 
 const About = () => {
   return (

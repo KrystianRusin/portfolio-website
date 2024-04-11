@@ -2,8 +2,6 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import "../styles/Projects.css";
 import objectNova from "../assets/objectNova.png";
-import storeImg from "../assets/store.png";
-import cvCreatorImg from "../assets/cvCreator.png";
 import sadImg from "../assets/SAD.png";
 import waldoImg from "../assets/where-waldo.png";
 import igImg from "../assets/igImg.png";
