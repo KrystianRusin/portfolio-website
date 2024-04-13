@@ -4,6 +4,7 @@ import Intro from "./components/Intro";
 import Blackhole from "./components/Blackhole";
 import About from "./components/About";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Analytics } from "@vercel/analytics/react";
 import Stars from "./components/three/Stars";
 
 import Skills from "./components/Skills";
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <div id="main" className="content-container">
+      <Analytics />
       <Blackhole />
       <Nav className="nav" openModal={handleOpenModal} />
       <div className="main-content" id="main-content">
