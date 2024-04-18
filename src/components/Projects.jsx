@@ -46,6 +46,7 @@ const Projects = () => {
             "A recreation of instagram using ReactJs for the front-end, ExpressJs and Mongodb for backend and database, and firebase for image storage"
           }
           repoLink={"https://github.com/KrystianRusin/instagram-clone"}
+          projectLink={"https://www.krystianigclone.com"}
         />
         <ProjectCard
           projectTitle={"Suspicious Activity Detection"}
