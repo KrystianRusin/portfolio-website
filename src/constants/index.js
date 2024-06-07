@@ -195,10 +195,10 @@ export const Backend_skill = [
 
 export const Full_stack = [
   {
-    skill_name: "React Native",
-    Image: "/ReactNative.png",
-    width: 70,
-    height: 70,
+    skill_name: "Rust",
+    Image: "/rust1.svg",
+    width: 75,
+    height: 75,
   },
   {
     skill_name: "TensorFlow",

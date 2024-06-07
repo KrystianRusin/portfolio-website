@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
   const roles = [
-    "A Full Stack Engineer",
-    " An A.I Enthusiast",
+    "A Software Engineer",
+    "An A.I Enthusiast",
     "A Life Long Learner",
   ];
 
