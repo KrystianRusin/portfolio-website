@@ -49,8 +49,7 @@ const Intro = () => {
           transition={{ type: "tween", duration: 0.5, delay: 0.8 }}
         >
           Based out of Toronto, Ontario with experience in web development, and
-          software development. I am working for ObjectNova Inc. as a Full Stack
-          Engineer.
+          software development. I am working as a Software Developer for Healthy Gamer
         </motion.p>
         <motion.a
           className="download-a"
