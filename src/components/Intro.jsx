@@ -48,8 +48,8 @@ const Intro = () => {
           animate={{ x: 0 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.8 }}
         >
-          Based out of Toronto, Ontario with experience in web development, and
-          software development. I am working as a Software Developer for Healthy Gamer
+          Software Developer based out of Toronto, Ontario with experience in full stack
+          development, and AI technologies.
         </motion.p>
         <motion.a
           className="download-a"
