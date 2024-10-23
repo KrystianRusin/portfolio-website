@@ -2,7 +2,6 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Intro from "./components/Intro";
 import Blackhole from "./components/Blackhole";
-import About from "./components/About";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Analytics } from "@vercel/analytics/react";
 import Stars from "./components/three/Stars";
@@ -12,9 +11,8 @@ import Projects from "./components/Projects";
 import ContactModal from "./components/ContactModal";
 
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const CameraController = () => {
   const { camera } = useThree();
